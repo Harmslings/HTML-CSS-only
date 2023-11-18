@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Poppins:wght@400;300&family=Source+Serif+Pro&display=swap');
+
+/*==================== RESETS =============================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========Global variables */
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px
+}
+
+
+body {
+    font-family: 'poppins', sans-serif;
+    color: var(--primary-text-color);
+    background-color: white;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+h2 {
+    font-size: 2rem;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+p {
+    font-family: 'nunito sans', sans-serif;
+    font-size: 1.5rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/*=================== UTILITY CLASSES ================= */
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.prime-btn {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transform: 02s ease-out;
+}
+
+.prime-btn:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.scnd-btn {
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.scnd-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+.hover-links {
+    color: var(--primary-text-color);
+    transition-property: 0.2s ease-out;
+}
+
+
+.hover-links:hover {
+    color: var(--accent-color);
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/* =============TOP BANNER ====================*/
+
+
+.top-banner {
+    background-color: rgb(231, 70, 148);
+    background-image: url(https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b7e4d7973addf81ed1f4010_pattern.png);
+    background-size: 300px;
+}
+
+
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+
+/* ====================== MAIN NAV BAR ================= */
+
+
+.main-nav {
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+
+.company-logo img {
+    width: 200px;
+
+}
+
+
+.nav-links {
+    flex-basis: 730px;
+}
+
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+header {
+    padding: 50px var(--padding-inline-section) 0;
+    gap: 50px;
+}
+
+.head-left {
+    max-width: 40vw;
+}
+
+.head-left h1 {
+    margin-top: 20px;
+}
+
+.head-right img {
+    width: 600px;
+}
+
+.get-started-btn {
+    margin: 20px;
+}
+
+/* ========================COMPANIES SECTION ========================= */
+
+.comp-header {
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+}
+
+.logos {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 46px;
+}
+
+/* ========================== FEATURE SECTION ========================= */
+
+.features-section {
+    padding: 80px var(--padding-inline-section);
+    background-image: url(assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.feature-head {
+    text-align: center;
+}
+
+
+.feature-head-text {
+    margin-bottom: 20px;
+}
+
+.feature-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+/* BIG FEATURE SECTION */
+
+.big-feature-section {
+    padding: 30px var(--padding-inline-section);
+
+}
+
+.big-feature-container {
+    gap: 30px;
+}
+
+.feature-img img {
+    width: 100%;
+}
+
+.feature-discrip {
+    flex-direction: column;
+    align-items: flex-start;
+} 
+
+/* EXAMPLES SECTION */
+
+.example-head {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ex-card {
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    bottom: 0;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    display: block;
+    font-weight: 500;
+    text-align: left;
+}
+
+.example-area {
+    justify-content: space-between;
+    margin-block: 30px ;
+}
+.ex-card:nth-child(1) {
+    background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.8)), url(assets/asset\ 36.jpeg);
+    background-size: cover;
+
+}
+.ex-card:nth-child(2) {
+    background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.8)), url(assets/asset\ 37.jpeg);
+    background-size: cover;
+
+}
+.ex-card:nth-child(3) {
+    background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.8)), url(assets/asset\ 38.jpeg);
+    background-size: cover;
+
+}
+.ex-card:nth-child(4) {
+    background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.8)), url(assets/asset\ 39.jpeg);
+    background-size: cover;
+    transition: 0.2s ease-out;
+
+}
+
+.ex-card:hover {
+    box-shadow: 0 0 10px #888;
+}
+
+/* CTA SECTION */
+
+.cta-sec-cont {
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+
+.cta-section {
+    background-color: #183b54;
+    padding: 120px var(--padding-inline-section);
+}
+
+.cta-sec-cont p {
+    color: white;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+
+.link-col {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-cont {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* SUB FOOTER */
+
+.sub-footer {
+    border-color: #B9CDE4;
+    padding: var(--padding-inline-section);
+}
+
+.sub-foot-cont {
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
