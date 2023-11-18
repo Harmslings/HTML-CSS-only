@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+}
+
+.outerbox {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, rgb(75, 78, 144), rgb(150, 150, 215));
+    background-image: url(https://images7.alphacoders.com/328/thumb-1920-328413.jpg);
+}
+
+.innerbox {
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px rgb(73, 71, 71);
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    border-radius: 8px;
+    background-color:#ffffff09;
+    /* background: linear-gradient(to top left, #ffffff,#ffffff33); */
+    backdrop-filter: blur(8px);
+    z-index: 2;
+}
+
+.signup-h h1{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.signup-h p {
+    font-size: 0.9rem;
+    color: rgb(51, 45, 45);
+
+}
+
+.signup-body {
+    margin: 20px 0;
+}
+
+.signup-body p {
+    margin: 10px 0;
+}
+
+
+.signup-body label {
+    display: block;
+    font-weight: bold;
+}
+
+
+.signup-body p input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(194, 194, 180);
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+.signup-body p input [type="submit"] {
+    background-color: rgb(56, 56, 143);
+    border: none;
+    color: azure;
+    cursor: pointer;
+}
+.signup-body p input[type="submit"]:hover {
+    background-color: rgb(8, 8, 19);
+    color: red;
+    
+}
+
+.foot p {
+    color: rgb(142, 132, 132);
+    text-align: center;
+}
+
+.foot p a {
+    color:rgb(194, 40, 109) ;
+
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to right, white,rgb(142, 132, 132));
+    position: absolute;
+}
+
+.c1 {
+    top: 100px;
+    left: 40px;
+}
+.c2 {
+    bottom:200px;
+    right: 50px;
+}
+
+
